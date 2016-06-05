@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //git test
     @IBOutlet weak var coolLogo: UIImageView!
     @IBOutlet weak var coolBg: UIImageView!
     @IBOutlet weak var abstractBg: UIImageView!
