@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="FbM-f0-2W0">
+                                <rect key="frame" x="-267" y="0.0" width="911" height="881"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abstract" translatesAutoresizingMaskIntoConstraints="NO" id="DmP-gk-1Xe">
+                                <rect key="frame" x="-160" y="-115" width="697" height="926"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aro-dG-FaK">
+                                <rect key="frame" x="104" y="319" width="167" height="30"/>
+                                <state key="normal" title="Make Me Super Cool!"/>
+                                <connections>
+                                    <action selector="makeMeNotSoUncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OUL-cZ-qsc"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="Xbc-iV-j5h">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="192"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxg-lR-HgM">
+                                <rect key="frame" x="225" y="376" width="46" height="30"/>
+                                <state key="normal" title="Cool"/>
+                                <connections>
+                                    <action selector="coolClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbp-6i-ues"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc5-1l-yIR">
+                                <rect key="frame" x="104" y="376" width="64" height="30"/>
+                                <state key="normal" title="Abstract"/>
+                                <connections>
+                                    <action selector="abstractClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRg-of-boJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="abstractBg" destination="DmP-gk-1Xe" id="OBI-BE-Zfi"/>
+                        <outlet property="abstractButton" destination="Qc5-1l-yIR" id="0PZ-we-MmW"/>
+                        <outlet property="coolBg" destination="FbM-f0-2W0" id="E5p-iG-REA"/>
+                        <outlet property="coolBgButton" destination="dxg-lR-HgM" id="VDS-GS-Qle"/>
+                        <outlet property="coolLogo" destination="Xbc-iV-j5h" id="2bi-KK-IYI"/>
+                        <outlet property="uncoolButton" destination="Aro-dG-FaK" id="XO9-eP-rOw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819.5" y="503.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Boom-App" width="554" height="110"/>
+        <image name="abstract" width="1667" height="1667"/>
+        <image name="bg" width="1200" height="1200"/>
+    </resources>
+</document>
